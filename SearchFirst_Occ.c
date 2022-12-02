@@ -66,6 +66,7 @@ int SearchFirstOcc(PNODE Head,int no)
             if(Head->Data==no)
             {
                 iPos=iCnt;
+                break;
             }
             temp=temp->Next;
         }
