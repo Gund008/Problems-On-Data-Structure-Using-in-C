@@ -53,7 +53,7 @@ void Display(PNODE Head)
 
 ////////////////////////////////////////////////////////////////////////////////////////
 
-int SearchFirstOcc(PNODE Head,int no)
+int SearchLasttOcc(PNODE Head,int no)
 {
     PNODE temp=Head;
     int iCnt,iPos=0;
@@ -88,7 +88,7 @@ int main()
     printf(" Please Enter the first Occurence of Element:\n");
     scanf("%d\n",&iValue);
 
-    iRet=SearchFirstOcc(First,iValue); //Call by value
+    iRet=SearchLastOcc(First,iValue); //Call by value
     printf("Position:%d\n",iRet);
 
     return 0;
