@@ -58,19 +58,15 @@ int SearchFirstOcc(PNODE Head,int no)
     PNODE temp=Head;
     int iCnt,iPos=0;
     
-    
-    while(temp!=NULL)    
+    while(temp!=NULL)
     {
-        for(iCnt=1;iCnt<Head->Data;iCnt++)
-        {
-            if(Head->Data==no)
-            {
-                iPos=iCnt;
-                break;
-            }
-            temp=temp->Next;
-        }
-       
+           iCnt++;
+           if(temp->Data==no)
+           {
+              iPos=iCnt;
+              break;
+           }
+           temp=temp->Next;
     }
     return iPos;
 }
