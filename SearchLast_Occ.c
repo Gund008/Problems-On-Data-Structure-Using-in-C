@@ -56,17 +56,22 @@ int SearchLastOcc(PNODE Head,int no)
     PNODE temp=Head;
     int iOcc,iCnt=0;
 
-   while(Head!=NULL)
-   {
-      iCnt++;
-      if(Head->Data==no)
-      {
-         iOcc=iCnt;
-      }
-      Head=Head->Next;
-   }
-   return iOcc;
+    
+    while(temp!=NULL)    
+    {
+        for(iCnt=1;iCnt<Head->Data;iCnt++)
+        {
+            if(Head->Data==no)
+            {
+                iPos=iCnt;
+            }
+            temp=temp->Next;
+        }
+       
+    }
+    return iPos;
 }
+
 ////////////////////////////////////////////////////////////////////////////////////////
 int main()
 {
