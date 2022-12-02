@@ -56,20 +56,24 @@ void Display(PNODE Head)
 int SearchFirstOcc(PNODE Head,int no)
 {
     PNODE temp=Head;
-    int iCnt=0,iOcc;
-
-    while(temp!=NULL)
+    int iCnt,iPos=0;
+    
+    
+    while(temp!=NULL)    
     {
-        iCnt++;
-       if(temp->Data==no)
-       {
-          iOcc=iCnt;
-          break;
-       }
-       temp=temp->Next;
+        for(iCnt=1;iCnt<Head->Data;iCnt++)
+        {
+            if(Head->Data==no)
+            {
+                iPos=iCnt;
+            }
+            temp=temp->Next;
+        }
+       
     }
-    return iOcc;
+    return iPos;
 }
+    
 ////////////////////////////////////////////////////////////////////////////////////////
 int main()
 {
