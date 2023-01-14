@@ -55,7 +55,7 @@ void Display(PNODE Head)
 int SearchLastOcc(PNODE Head,int iNo)
 {
     PNODE temp=Head;
-    int iCnt=0,i=0;
+    int iCnt=-1,i=1;
 
     while(temp!=NULL)
     {
@@ -66,7 +66,7 @@ int SearchLastOcc(PNODE Head,int iNo)
         temp=temp->Next;
         i++;
     }
-    return iCnt+1;
+    return iCnt;
 }
 
 //////////////////////////////////////////////////////////////////////////////////////////
