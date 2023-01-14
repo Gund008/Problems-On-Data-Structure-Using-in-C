@@ -1,6 +1,5 @@
 /*
 Write a Program which Search Middle Element from singly linear linked list.
-Function should return position at which element is found
 
 Output-40
 */
