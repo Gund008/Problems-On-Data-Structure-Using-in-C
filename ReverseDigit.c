@@ -64,9 +64,9 @@ int ChkDigit(int iNo)
 void Reverse(PNODE Head)
 {
     PNODE temp=Head;
+    int iRet=0;
     while(temp!=NULL)
     {
-        int iRet=0;
         iRet=ChkDigit(Head->Data);
         printf("%d\t",iRet);
         Head=Head->Next;
