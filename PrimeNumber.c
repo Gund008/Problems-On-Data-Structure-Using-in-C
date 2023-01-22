@@ -63,9 +63,9 @@ int Prime(int iNo)
 
 void DisplayPrime(PNODE Head)
 {
+      int iRet=0;
       while(Head!=NULL)
       {
-          int iRet=0;
           iRet=Prime(Head->Data);
           if(iRet==Head->Data)
           {
